@@ -43,7 +43,7 @@
 }
 
 .gallery-item:hover {
-  transform: scale(1.03);
+  transform: scale(1.1);
 }
 
 .feedback-form {
@@ -102,4 +102,19 @@
 .feedback-form button:hover,
 .feedback-form button:focus {
   background: #6c8cff;
+}
+
+.simple-lightbox {
+  background-color: #2e2f42cc;
+}
+
+/* Стилі для стрілок навігації та номерації */
+.simple-lightbox .sl-navigation,
+.simple-lightbox .sl-counter {
+  color: #ffffff; /* Білий колір для стрілок та номерації */
+}
+
+/* Стилі для хрестика закриття */
+.simple-lightbox .sl-close {
+  color: #ffffff; /* Білий колір для хрестика закриття */
 }

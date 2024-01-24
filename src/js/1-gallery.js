@@ -89,10 +89,10 @@ function createGalleryItem({ preview, original, description }) {
 }
 
 function createGallery(images) {
-  const galleryItemHtml = images.map(createGalleryItem).join('');
+  const galleryItemHtml = images.map(createGalleryItem).map(li => li.outerHTML).join('');
   galleryList.innerHTML = galleryItemHtml;
 }
 
 createGallery(images);
 
-new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
+new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 , background: '#2E2F42CC' });
